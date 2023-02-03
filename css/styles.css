@@ -426,6 +426,10 @@ color: #FFFFFF;
     padding-bottom: 8px;
     padding-left: 16px;
 }
+.subscribe-input:focus {
+    border-color:var(--active-buttons-background);
+    outline: none;
+  }
 .subscribe-button{
 min-width: 168px;
 height: 40px;
