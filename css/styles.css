@@ -688,7 +688,7 @@ margin-right: 8px;
   .modal-check:checked+ .check-text::before{
     background-color: var(--active-buttons-background);
     border: none;
-    background-image: url(./images/svg/Vector.svg);
+    background-image: url(../images/svg/Vector.svg); ;
     background-position: center;
     background-repeat: no-repeat;
     transition: background-color var(--transitionn-dur-and-func);
