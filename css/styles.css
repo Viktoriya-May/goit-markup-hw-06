@@ -427,19 +427,31 @@ color: #FFFFFF;
     padding-left: 16px;
 }
 .subscribe-button{
-width: 168px;
+min-width: 168px;
 height: 40px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.5;
-background: #4D5AE5;
+letter-spacing: 0.06em;
+background-color: var(--primary-background-color);
 border-radius: 4px;
-border: none;
 color: #FFFFFF;
-
+border-color: transparent;
+padding-top: 8px 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:16px;
+transition: background-color var(--transitionn-dur-and-func);
 }
+.subscribe-icon{
+    fill:#FFFFFF;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+      background-color: var(--active-buttons-background);}
 
 
 /* ---------------------------------------PORTFOLIO------------------------------------------------ */
@@ -722,7 +734,6 @@ margin-right: 8px;
   }
 .policy-activ{
     color: var(--primary-background-color);
-    text-decoration: none;
 
   }
 .check-text::before{
