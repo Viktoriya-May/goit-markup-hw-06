@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
 </head>
 <body>
     <!--Шапка сайта-->
@@ -17,7 +20,7 @@
     <div class="container page-header-container">
            <nav class="header-navigation">
                 <a href="./index.html" class="logo logo-header"><span class="web top">Web</span><spam class="studio top">Studio</span></a>
-                     <ul class="site-nav list" >
+                     <ul class="header-navigation-list list" >
                         <li class="item" >
                            <a href="./index.html" class="link link-activ current">Studio</a>
                         </li>
@@ -30,20 +33,88 @@
                      </ul>
             </nav>
                      <ul class="contakt-nav list">
-                         <li>
-                             <a href="mailto:info@devstudio.com" class="contakt-phone link-activ">@devstudio.com
+                         <li class="contakt-nav-item">
+                             <a href="mailto:info@devstudio.com" class="contakt-phone link-activ">info@devstudio.com           
                              </a>
-                         <li>
+                         <li class="contakt-nav-item">
                      <a href="tel:+110001111111" class="contakt-mail link-activ">+11 (000) 111-11-11
                          </a>
                          </li>
                      </ul>
+                     <button type="button" class="mobile-menu-open" data-menu-open>
+                        <svg class="mobile-menu-open-icon" width="32" height="24">
+                            <use href="./images/sprite.svg#icon-menu-hamburger"></use>
+                        </svg>
+                     </button>
 </div>
-   </header>
+<!----------------------------------------мобільне меню ------------------------------------------------>
+<div class="mobil-menu" data-menu>
+    <div class="container mobile-menu-container"> 
+        <button type="button" class="mobile-menu-close-button" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    
+                    <ul class="mobil-menu-list list">
+                            <li class="mobil-menu-item">
+                                <a href="./index.html" class="mobil-link link">Studio</a>
+                            </li>
+                            <li class="mobil-menu-item ">
+                                <a href="./portfolio.html" class="mobil-link link">Portfolio</a>
+                            </li>
+                            <li class="mobil-menu-item">
+                                <a href="" class="mobil-link link">Contacts</a>
+                                </li>
+                        </ul>
 
-   <!--Mein-->
-   <main>
-    <!--Герой-->
+
+                        <ul class="contakt-mobil list">
+                            <li class="mobil-menu-item">
+                                <a href="tel:+110001111111" class="mobil-link link">+11 (000) 111-11-11
+                                </a>
+                               
+                            <li class="mobil-menu-item ">
+                                <a href="mailto:info@devstudio.com" class="mobil-link mail-menu link">@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+    <ul class="modal-social-menu list">
+    <li class="social-list-item">
+        <a href="" class="modal-social-link">
+        <svg class="social-list-icon" width="24" height="24">
+           <use href="./images/sprite.svg#icon-instagram"></use>
+        </svg>
+       </a>
+   </li>
+   <li class="social-list-item">
+    <a href="" class="modal-social-link">
+    <svg class="social-list-icon" width="24" height="24">
+       <use href="./images/sprite.svg#icon-twitter"></use>
+    </svg>
+   </a>
+</li>
+<li class="social-list-item">
+<a href="" class="modal-social-link">
+<svg class="social-list-icon" width="24" height="24">
+   <use href="./images/sprite.svg#icon-facebook"></use>
+</svg>
+</a>
+</li>
+<li class="social-list-item">
+<a href="" class="modal-social-link">
+<svg class="social-list-icon" width="24" height="24">
+<use href="./images/sprite.svg#icon-linkedin"></use>
+</svg>
+</a>
+</li>
+</ul>                 
+    </div>
+</div>
+   </header>  
+  
+   <main> 
+     <!-------------------------------------------------- Герой------------------------------------------------------------------------->
     <section class="hero section" >
         <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business
@@ -51,8 +122,9 @@
         <button class="button-main" type="button" data-modal-open> Order Service
         </button> 
         </div>
-    </section>
-    <!--Наші переваги-->
+    </section> 
+</main>
+    <!----------------------------------------------Наші переваги------------------------------->
     <section class="section-features section">
         <div class="container">
         <h2 class="section-title visual-hidden">Our features</h2>
@@ -104,9 +176,9 @@
             </li>
         </ul>
     </div>
-    </section>
+    </section> 
     <!--Наша робота-->
-    <section class="section-work section">
+    <!-- <section class="section-work section">
         <div class="container">
         <h2 class="section-title">What are we doing
         </h2>
@@ -131,9 +203,9 @@
             </li>
         </ul>
     </div>
-    </section>
+    </section> -->
     <!--Команда-->
-    <section class="section-team section">
+    <!-- <section class="section-team section">
         <div class="container">
         <h2 class="section-title">Our Team
         </h2>
@@ -296,9 +368,9 @@
                    </li>
         </ul>
     </div>
-    </section>
+    </section> -->
     <!-- ----------------------Customer---------------------------------------- -->
-   <section class="customers">
+   <!-- <section class="customers">
     <div class="container">
 <h2 class="customers-title">Customers</h2>
 <ul class="customers-list list">
@@ -347,9 +419,10 @@
 </ul>
     </div>
    </section>
-</main> 
-<!-- ------------------------Footer-------------------------------------- -->
-   <footer class="footer">
+</main>
+</main>
+------------------------Footer--------------------------------------
+   <!-- <footer class="footer">
     <div class="container footer-container">
         <div class="footer-content">
         <a href="./index.html" class="logo"> <span class="web down">Web</span><spam class="studio licht">Studio</span></a>
@@ -408,7 +481,7 @@
         </form>
             </section>
     </div>
-   </footer>
+   </footer> -->
    <!-- ------------------------Модальне вікно------------------------ -->
    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -473,8 +546,8 @@
             ></textarea>
             </div>
             
-<!----------------------------------------Чек бокс------------------------ -------------- -->
-          <div class="modal-form-input form-chek">
+<!-- --------------------------------------Чек бокс------------------------ -------------- -->
+    <div class="modal-form-input form-chek">
                 <input type="checkbox" 
                 id="policy" name="policy" 
                 value="true" class="modal-check visual-hidden" 
@@ -489,5 +562,8 @@
 </div>
 </section>
    <script src="./js/modal.js"></script>
+   <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
 </body>
 </html>
